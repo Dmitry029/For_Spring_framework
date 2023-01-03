@@ -1,11 +1,9 @@
 package com.udemy.spring.springselenium.config;
 
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.remote.SessionId;
+import org.openqa.selenium.NoSuchSessionException;
+import org.openqa.selenium.WebDriver;
 import org.springframework.beans.factory.ObjectFactory;
 import org.springframework.context.support.SimpleThreadScope;
-
-import java.util.Objects;
 
 
 public class BrowserScope extends SimpleThreadScope {
@@ -13,10 +11,11 @@ public class BrowserScope extends SimpleThreadScope {
     @Override
     public Object get(String name, ObjectFactory<?> objectFactory) {
         Object o = super.get(name, objectFactory);
-        SessionId sessionId = ((RemoteWebDriver)o).getSessionId();
-        if(Objects.isNull(sessionId)){
+        try {
+            ((WebDriver) o).getWindowHandle();
+        } catch (NoSuchSessionException e) {
             super.remove(name);
-            super.get(name, objectFactory);
+            o = super.get(name, objectFactory);
         }
         return o;
     }

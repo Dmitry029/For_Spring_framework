@@ -13,13 +13,13 @@ import org.springframework.context.annotation.Scope;
 @LazyConfiguration
 public class WebDriverConfig {
 
-    @Bean
-    @Scope("prototype")
+   /* @Bean
+    @Scope("browserscope")
     @ConditionalOnProperty(name = "browser", havingValue = "firefox")
     public WebDriver firefoxDriver(){
         WebDriverManager.firefoxdriver().setup();
         return new FirefoxDriver();
-    }
+    }*/
 
     @Bean
     @Scope("browserscope")
