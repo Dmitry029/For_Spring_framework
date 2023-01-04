@@ -1,4 +1,4 @@
-package com.udemy.spring.springselenium.config;
+package com.udemy.spring.springselenium.kelvin.scope;
 
 import org.openqa.selenium.NoSuchSessionException;
 import org.openqa.selenium.WebDriver;
