@@ -6,6 +6,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import static org.testng.Assert.*;
+
+/**
+ * Test class presenting reading property from property files
+ */
 public class FlightTest extends SpringBaseTestNGTest {
     @Autowired
     private FlightPage flightPage;
@@ -16,7 +21,7 @@ public class FlightTest extends SpringBaseTestNGTest {
     @Test
     public void flightTest(){
         this.flightPage.goTo(this.appDetails.getUrl());
-        Assert.assertTrue(this.flightPage.isAt());
-        Assert.assertEquals(this.flightPage.getLabels(), this.appDetails.getLabels());
+        assertTrue(this.flightPage.isAt());
+        assertEquals(this.flightPage.getLabels(), this.appDetails.getLabels());
     }
 }
