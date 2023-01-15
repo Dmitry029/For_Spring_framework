@@ -1,12 +1,13 @@
 package com.udemy.spring.springselenium.page.google;
 
+import com.udemy.spring.springselenium.kelvin.annotation.Page;
 import com.udemy.spring.springselenium.page.Base;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Lazy;
 
 import javax.naming.directory.SearchResult;
-
+@Page
 public class GooglePage extends Base {
     @Lazy
     @Autowired
