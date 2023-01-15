@@ -1,4 +1,4 @@
-package com.udemy.spring.springselenium.flight1;
+package com.udemy.spring.springselenium.flights;
 
 import org.springframework.test.context.TestPropertySource;
 

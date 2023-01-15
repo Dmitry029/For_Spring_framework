@@ -1,4 +1,4 @@
-package com.udemy.spring.springselenium.flight1;
+package com.udemy.spring.springselenium.flights;
 
 import com.udemy.spring.springselenium.SpringBaseTestNGTest;
 import com.udemy.spring.springselenium.page.flights.FlightPage;

@@ -1,4 +1,4 @@
-package com.udemy.spring.springselenium.flight1;
+package com.udemy.spring.springselenium.flights;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
