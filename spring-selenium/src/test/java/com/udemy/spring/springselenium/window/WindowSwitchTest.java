@@ -1,6 +1,7 @@
 package com.udemy.spring.springselenium.window;
 
 import com.udemy.spring.springselenium.SpringBaseTestNGTest;
+import com.udemy.spring.springselenium.kelvin.annotation.TakeScreenshot;
 import com.udemy.spring.springselenium.page.windows.MainPage;
 import com.udemy.spring.springselenium.page.windows.PageA;
 import com.udemy.spring.springselenium.page.windows.PageB;
@@ -11,7 +12,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-@TestPropertySource(properties = "browser=firefox")
+@TestPropertySource(properties = "browser=chrome")
 public class WindowSwitchTest extends SpringBaseTestNGTest {
     @Autowired
     private MainPage mainPage;
