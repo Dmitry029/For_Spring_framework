@@ -1,6 +1,7 @@
 package com.udemy.spring.springselenium.googletest;
 
 import com.udemy.spring.springselenium.SpringBaseTestNGTest;
+import com.udemy.spring.springselenium.kelvin.annotation.LazyAutowired;
 import com.udemy.spring.springselenium.kelvin.service.ScreenShotService;
 import com.udemy.spring.springselenium.page.google.GooglePage;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,10 +12,10 @@ import java.io.IOException;
 import static org.testng.Assert.assertTrue;
 
 public class Google1Test extends SpringBaseTestNGTest {
-    @Autowired
+    @LazyAutowired
     private GooglePage googlePage;
 
-    @Autowired
+    @LazyAutowired
     private ScreenShotService screenShotService;
 
     @Test
