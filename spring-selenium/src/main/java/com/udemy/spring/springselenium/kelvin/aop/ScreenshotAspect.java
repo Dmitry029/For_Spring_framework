@@ -13,10 +13,11 @@ import java.io.IOException;
 @Component
 public class ScreenshotAspect {
     @Autowired
-    private ScreenShotService screenShotService;
+    private ScreenShotService screenshotService;
 
     @After("@annotation(takeScreenshot)")
     public void after(TakeScreenshot takeScreenshot) throws IOException {
-        this.screenShotService.takeScreenshot();
+        this.screenshotService.takeScreenshot();
+    private ScreenShotService screenShotService;
     }
 }
