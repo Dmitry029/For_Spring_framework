@@ -13,7 +13,8 @@ import java.util.Objects;
 
 @Page
 public class VisaRegistrationPage extends Base {
-    private static final Logger logger = LoggerFactory.getLogger(VisaRegistrationPage.class);
+    private static final Logger logger =
+            LoggerFactory.getLogger(VisaRegistrationPage.class);
 
     @FindBy(id ="first_4")
     private WebElement firstName;
