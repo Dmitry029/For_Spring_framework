@@ -1,8 +1,7 @@
 package com.udemy.spring.springselenium.bdd;
 
 import com.udemy.spring.springselenium.kelvin.annotation.LazyAutowired;
-import com.udemy.spring.springselenium.page.google.GooglePage;
-import io.cucumber.java.en.And;
+import com.udemy.spring.springselenium.page.google1.Google1Page;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -16,7 +15,7 @@ import static org.testng.Assert.assertTrue;
 public class GoogleSteps {
 
     @LazyAutowired
-    private GooglePage googlePage;
+    private Google1Page googlePage;
 
     @Given("I am on the google site")
     public void launchSite() {

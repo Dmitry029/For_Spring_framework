@@ -15,8 +15,8 @@ import java.time.LocalDate;
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
-@SpringBootTest
-@CucumberContextConfiguration
+//@SpringBootTest
+//@CucumberContextConfiguration
 public class VisaSteps {
 
     @LazyAutowired
