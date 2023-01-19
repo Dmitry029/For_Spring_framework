@@ -35,3 +35,4 @@ build/
 ### Ignore screenshots ###
 *.png
 /test-execution.log
+/src/test/resources/screenshots2/temp
