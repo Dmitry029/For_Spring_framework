@@ -6,8 +6,6 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.cucumber.spring.CucumberContextConfiguration;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.util.StringUtils;
 
 import java.time.LocalDate;
@@ -22,7 +20,7 @@ public class VisaSteps {
     @LazyAutowired
     private VisaRegistrationPage registrationPage;
 
-    @Given("I am on VISA registartion form")
+    @Given("I am on VISA registration form")
     public void launchSite() {
         registrationPage.goTo();
         assertTrue(registrationPage.isAt());

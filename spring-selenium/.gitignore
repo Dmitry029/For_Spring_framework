@@ -36,3 +36,4 @@ build/
 *.png
 /test-execution.log
 /src/test/resources/screenshots2/temp
+/src/test/resources/cucumber-report.html

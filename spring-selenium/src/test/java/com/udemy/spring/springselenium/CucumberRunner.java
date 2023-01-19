@@ -9,7 +9,7 @@ import io.cucumber.testng.CucumberOptions;
         //tags =  "@visa",
         plugin = {
                 "pretty",
-                "html:src\\test\\resources\\screenshots2\\temp"
+                "html:src\\test\\resources\\cucumber-report.html"
         }
 )
 public class CucumberRunner extends AbstractTestNGCucumberTests {
