@@ -8,7 +8,7 @@ Feature: google search
     Then I should see at least <count> results
 
     Examples:
-    | keyword   |count|
-    | selenium  | 2   |
-    | java      | 5   |
-    | spring    | 7   |
+      | keyword  | count |
+      | selenium | 2     |
+      | java     | 5     |
+      | spring   | 7     |

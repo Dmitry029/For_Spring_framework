@@ -37,4 +37,9 @@ public class ScreenShotService {
         File sourceFile = ctx.getBean(TakesScreenshot.class).getScreenshotAs(OutputType.FILE);
         FileCopyUtils.copy(sourceFile, this.path.resolve(getImageName()).toFile());
     }
+
+    public byte[] getScreenshot(){
+        return  this.ctx.getBean(TakesScreenshot.class)
+                .getScreenshotAs(OutputType.BYTES);
+    }
 }
