@@ -16,7 +16,13 @@ public class WebDriverConfig {
     @ConditionalOnProperty(name = "browser", havingValue = "firefox")
     public WebDriver firefoxDriver() {
         WebDriverManager.firefoxdriver().setup();
-        return new FirefoxDriver();
+        WebDriver driver = new FirefoxDriver();
+        /**
+         * to quit browser for every test
+         * Runtime.getRuntime().addShutdownHook(new Thread(driver::quit));
+         */
+
+        return driver;
     }
 
     @ThreadScopeBean
@@ -24,6 +30,11 @@ public class WebDriverConfig {
     public WebDriver chromeDriver() {
         WebDriverManager.chromedriver()
                 .setup();
-        return new ChromeDriver();
+        WebDriver driver = new ChromeDriver();
+        /**
+         * to quit browser for every test
+         * Runtime.getRuntime().addShutdownHook(new Thread(driver::quit));
+         */
+        return driver;
     }
 }

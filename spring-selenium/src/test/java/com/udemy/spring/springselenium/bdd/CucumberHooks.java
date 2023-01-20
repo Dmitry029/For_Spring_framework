@@ -27,5 +27,4 @@ public class CucumberHooks {
     public void afterScenario() {
         this.applicationContext.getBean(WebDriver.class).quit();
     }
-
 }

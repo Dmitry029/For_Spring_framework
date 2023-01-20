@@ -1,5 +1,6 @@
 Feature: google search
 
+  @google
   #noinspection CucumberUndefinedStep
   Scenario Outline: I want to search on google site
     Given I am on the google site
