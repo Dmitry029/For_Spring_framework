@@ -34,3 +34,6 @@ build/
 
 ### Ignore screenshots ###
 *.png
+/test-execution.log
+/test-execution.log.2023-01-19.0.gz
+/src/test/resources/cucumber-report.html
